@@ -2,6 +2,10 @@
 
 {% block title %}Home{% endblock title %}
 
+{% block head %}
+<link rel="stylesheet" type="text/css" href="/static/CSS/style.css">
+{% endblock head %}
+
 {% block body %} 
 <div class="container-fluid px-0">
   <div id="carouselExample" class="carousel slide">
@@ -10,7 +14,7 @@
         <div class="carousel-item active">
           <img src="/static/img/carousel 1.jpg" class="d-block w-100" style="width: 300px; height: 400px;" alt="...">
           <div class="carousel-caption d-none d-md-block" style="color: black; margin-top: 50px; margin-left: 50px; padding: 0;">
-            <h1 style="font-size: 2em; margin-top: 50px; font-weight: bold;">Welcome to Chill Scoops</h1>
+            <h1 style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Welcome to Chill Scoops</h1>
           </div>
         </div>
         
@@ -24,7 +28,7 @@
 <h1 class="my-2 text-center">Select from our range of Ice Creams</h1>
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
     <div class="col">
-      <div class="card shadow-sm">
+      <div class="card shadow-sm hover-card">
         <img src="/static/img/thumbnail 1.jpg" class="d-block w-100" style="width: 300px; height: 250px;" alt="...">
         <div class="card-body">
           <p class="card-text"><b>Ice Cream Scoops</b></p>
@@ -38,7 +42,7 @@
       </div>
     </div>
     <div class="col">
-      <div class="card shadow-sm">
+      <div class="card shadow-sm hover-card">
         <img src="/static/img/thumbnail 2.jpg" class="d-block w-100" style="width: 300px; height: 250px;" alt="...">
         <div class="card-body">
           <p class="card-text"><b>Ice Cream Cone</b></p>
@@ -52,10 +56,10 @@
       </div>
     </div>
     <div class="col">
-      <div class="card shadow-sm">
-        <img src="/static/img/thumbnail 3.jpg" class="d-block w-100" style="width: 300px; height: 250px;" alt="...">
+      <div class="card shadow-sm hover-card">
+        <img src="/static/img/thumbnail3.jpg" class="d-block w-100" style="width: 300px; height: 250px;" alt="...">
         <div class="card-body">
-          <p class="card-text"><b>Variety of Flavors</b></p>
+          <p class="card-text"><b>Our Pints</b></p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
               <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -67,7 +71,7 @@
     </div>
 
     <div class="col">
-      <div class="card shadow-sm">
+      <div class="card shadow-sm hover-card">
         <img src="/static/img/thumbnail 4.jpg" class="d-block w-100" style="width: 300px; height: 250px;" alt="...">
         <div class="card-body">
           <p class="card-text"><b>Ice Lollies</b></p>

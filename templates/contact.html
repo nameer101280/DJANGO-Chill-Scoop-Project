@@ -2,11 +2,28 @@
 
 {% block title %}Contact{% endblock title %}
 
+{% block head %}
+  <style>
+    /* Custom styles for contact form */
+    .contact-form-container {
+      max-width: 500px; /* Set maximum width for the form */
+      margin: 0 auto; /* Center align the form */
+    }
+    /* Adjust widths of form controls and labels */
+    .form-label {
+      width: 150px; /* Adjust width of labels */
+    }
+    .form-control {
+      width: calc(100% - 170px); /* Adjust width of form controls */
+    }
+  </style>
+{% endblock head %}
+
 {% block body %}
 <div class="container-fluid px-0 mb-3">
     <img src="/static/img/contact.jpg" class="d-block w-100 mx-0" style="width: 300px; height: 400px;" alt="...">
 </div>
-<div class="container mb-3 py-4">
+<div class="container mb-3 py-4 contact-form-container">
     <h1 class="text-center">Contact Us</h1>
     <form method="post" action="/contact">
         {% csrf_token %}
@@ -26,7 +43,7 @@
         </div>
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Tell us more about why you want to contact.</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3"></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="desc" rows="3"></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>

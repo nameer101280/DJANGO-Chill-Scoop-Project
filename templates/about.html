@@ -1,8 +1,94 @@
 {% extends "base.html" %}
 
-{% block title %}About{% endblock title %}
+{% block title %}About Us{% endblock title %}
 
-{% block body %} 
+{% block head %}
+  <style>
+    /* Custom styles for the about page */
+    #about-carousel {
+      margin-bottom: 30px;
+    }
+    .carousel-caption {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      width: 100%;
+    }
+    .carousel-caption h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .carousel-caption p {
+      font-size: 1.5rem;
+      font-style: italic;
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .about-content {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .about-content p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #333;
+    }
+    .about-content p.lead {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+    .about-image {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+{% endblock head %}
 
+{% block body %}
+<div class="container">
+    <div id="about-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/static/img/aboutus.jpg" class="d-block w-100 about-image" alt="About Us">
+                <div class="carousel-caption">
+                    <h1 class="display-4">About Us</h1>
+                    <p class="lead">Learn more about our mission, vision, and values</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="row about-content">
+        <div class="col-md-10 mx-auto">
+            <p class="lead text-center">
+                Welcome to Chill Scoops, where every scoop is a taste of happiness! Chill Scoops has
+                been delighting ice cream enthusiasts with our premium-quality, handcrafted frozen treats.
+            </p>
+            <p>
+                At Chill Scoops, we believe that ice cream isn't just a dessert – it's an experience. That's why we're
+                committed to creating the most delicious and unforgettable ice cream flavors using only the finest
+                ingredients sourced from local farmers and producers. From classic favorites to unique and innovative
+                creations, our flavors are sure to tantalize your taste buds and leave you craving for more.
+            </p>
+            <p>
+                But it's not just about the ice cream – it's about the memories we create with every scoop. Whether
+                you're enjoying a cone with family and friends on a sunny day or treating yourself to a pint of your
+                favorite flavor at home, Chill Scoops is here to make every moment sweeter.
+            </p>
+            <p>
+                Our dedication to quality, flavor, and customer satisfaction sets us apart. We pour our hearts and souls
+                into every batch of ice cream we churn, ensuring that each spoonful is nothing short of perfection. From
+                our artisanal process to our friendly service, we strive to exceed your expectations and leave you with
+                a smile on your face.
+            </p>
+            <p class="lead text-center">
+                Thank you for choosing Chill Scoops. Join us on a journey of flavor and fun as we scoop up happiness, one cone at a time!
+            </p>
+        </div>
+    </div>
+</div>
 {% endblock body %}

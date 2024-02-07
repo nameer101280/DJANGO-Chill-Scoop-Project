@@ -1,0 +1,7 @@
+/* style.css */
+
+.hover-card:hover {
+  /* Add your hover effect styles here */
+  transform: scale(1.1); /* Example: Increase the size of the card on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Example: Add a shadow effect */
+}
